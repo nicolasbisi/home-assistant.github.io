@@ -128,6 +128,10 @@ sudo setcap 'cap_net_bind_service=+ep' /srv/homeassistant/homeassistant_venv/bin
 ```
 Please note that your path may be different depending on your installation method. For example, if you followed the [Virtualenv instructions](/docs/installation/virtualenv/), your path will be `/srv/homeassistant/bin/python3`.
 
+<p class='note warning'>
+Be aware if you are running Plex Server on the same device as HA that it uses port 1900 for DLNA. https://support.plex.tv/articles/200350536-dlna/.
+</p>
+
 ### {% linkable_title License %}
 
 Much of this code is based on work done by Bruce Locke on his [ha-local-echo](https://github.com/blocke/ha-local-echo) project, originally released under the MIT License. The license is located [here](https://github.com/blocke/ha-local-echo/blob/b9bf5dcaae6d8e305e2283179ffba64bde9ed29e/LICENSE).
